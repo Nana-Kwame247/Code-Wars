@@ -21,12 +21,15 @@ Examples
 //solution
 
 function sameCase(a, b) {
+  // code to check if either is not a letter
   if (
     a.toUpperCase() === a.toLowerCase() ||
     b.toLowerCase() === b.toUpperCase()
   ) {
     return -1;
-  } else if (
+  }
+  //code to compare if they are the same case
+  else if (
     (a === a.toLowerCase() && b === b.toLowerCase()) ||
     (a === a.toUpperCase() && b === b.toUpperCase())
   ) {
